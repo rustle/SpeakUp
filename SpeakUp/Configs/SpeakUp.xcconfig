@@ -1,0 +1,29 @@
+//
+//  SpeakUp.xcconfig
+//
+//  Copyright © 2017-2022 Doug Russell. All rights reserved.
+//
+
+PRODUCT_BUNDLE_IDENTIFIER = com.rustle.SpeakUp.ScreenReader
+PRODUCT_NAME = $(TARGET_NAME)
+
+// DEVELOPMENT_TEAM =
+
+CODE_SIGN_ENTITLEMENTS = SpeakUp/Resources/SpeakUp.entitlements
+CODE_SIGN_STYLE = Automatic
+
+OTHER_SWIFT_FLAGS = -Xfrontend -warn-concurrency -Xfrontend -enable-actor-data-race-checks
+
+GENERATE_INFOPLIST_FILE = YES
+INFOPLIST_KEY_NSHumanReadableCopyright = Copyright © 2017-2022 Doug Russell. All rights reserved.
+INFOPLIST_KEY_LSApplicationCategoryType = public.app-category.utilities
+INFOPLIST_KEY_NSMainNibFile = MainMenu
+INFOPLIST_KEY_NSPrincipalClass = NSApplication
+
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon
+ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor
+COMBINE_HIDPI_IMAGES = YES
+CURRENT_PROJECT_VERSION = 1
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/../Frameworks
+MARKETING_VERSION = 1.0
+SWIFT_EMIT_LOC_STRINGS = YES
