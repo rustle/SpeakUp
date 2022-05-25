@@ -35,6 +35,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                             "com.apple.voiceover",
                             "com.apple.webkit.databases",
                             "com.apple.webkit.networking",
+                            "com.google.Keystone.Agent",
                         ]
                     }
                 )
