@@ -30,6 +30,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                         [
                             SpeechInProcess(),
                             Text(),
+                            Braille()
                         ]
                     },
                     commandSourcesFactory: {
