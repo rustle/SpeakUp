@@ -1,11 +1,11 @@
 //
 //  Project.xcconfig
 //
-//  Copyright © 2017-2022 Doug Russell. All rights reserved.
+//  Copyright © 2017-2026 Doug Russell. All rights reserved.
 //
 
 SDKROOT = macosx
-MACOSX_DEPLOYMENT_TARGET = 12.3
+MACOSX_DEPLOYMENT_TARGET = 14.0
 
 GCC_C_LANGUAGE_STANDARD = gnu11
 CLANG_CXX_LANGUAGE_STANDARD = gnu++17
