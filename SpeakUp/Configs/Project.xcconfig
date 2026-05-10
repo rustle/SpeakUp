@@ -5,7 +5,8 @@
 //
 
 SDKROOT = macosx
-MACOSX_DEPLOYMENT_TARGET = 14.0
+// TODO: Investigate whether this can drop back to 14.0 without breaking SPM manifest compilation
+MACOSX_DEPLOYMENT_TARGET = 15.0
 
 GCC_C_LANGUAGE_STANDARD = gnu11
 CLANG_CXX_LANGUAGE_STANDARD = gnu++17
