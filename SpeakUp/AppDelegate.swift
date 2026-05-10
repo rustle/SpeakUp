@@ -6,11 +6,16 @@
 
 import AppKit
 import AX
+import os
 import ScreenReader
 
 @MainActor
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
+    private let logger = Logger(
+        subsystem: "com.rustle.SpeakUp",
+        category: "act"
+    )
     private lazy var screenReader: ScreenReader = {
         ScreenReader(dependencies: makeDependencies())
     }()
