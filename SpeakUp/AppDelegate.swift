@@ -37,7 +37,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                         [
                             SpeechInProcess(),
                             Text(),
-                            Braille()
+                            Braille(),
+                            Geometry(),
                         ]
                     },
                     commandSourcesFactory: {
