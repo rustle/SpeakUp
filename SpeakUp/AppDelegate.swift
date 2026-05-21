@@ -6,6 +6,8 @@
 
 import AppKit
 import AX
+import Carbon
+import CoreGraphics
 import os
 import ScreenReader
 
@@ -42,7 +44,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                         [
                             try KeyboardCommandSource(
                                 capsLock: .init(),
-                                bindings: defaultKeyboardBindings
+                                bindings: [
+                                    CGKeyCode(kVK_ANSI_A): .readAll,
+                                    CGKeyCode(kVK_Space): .performDefaultAction,
+                                ]
                             )
                         ]
                     }
